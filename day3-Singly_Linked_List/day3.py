@@ -11,3 +11,13 @@ node3 = Node(3)
 node4 = Node(4)
 node5 = Node(5)
 node6 = Node(6)
+
+
+# link the nodes with each other
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+node5.next = node6
+node6.next = None
+
