@@ -1,5 +1,5 @@
 class Node:
-    def __init(self, data=None, next_node=None):
+    def __init__(self, data=None, next_node=None):
         self.data = data
         self.next = next_node
     
@@ -13,11 +13,16 @@ node5 = Node(5)
 node6 = Node(6)
 
 
-# link the nodes with each other
+# link the nodes to form a linked list
 node1.next = node2
 node2.next = node3
 node3.next = node4
 node4.next = node5
 node5.next = node6
-node6.next = None
 
+# print the linked list
+current = node1
+while current is not None:
+    print(current.data, end='->')
+    current = current.next
+print("None")
