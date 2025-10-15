@@ -28,3 +28,12 @@ new_node.next = head
 
 # recreate a reference making the new node as a new reference
 head = new_node
+
+
+# print the list
+current = head
+
+while current is not None:
+    print(current.data, end='->')
+    current = current.next
+print("None")
