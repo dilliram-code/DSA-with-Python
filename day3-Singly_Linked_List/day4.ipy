@@ -21,3 +21,10 @@ node4.next = node5
 # take first node as a reference
 head = node1
 current = head
+
+
+# traverse in the SSL
+while current is not None:
+    print(current.data, end='->')
+    current = current.next
+print("None")
