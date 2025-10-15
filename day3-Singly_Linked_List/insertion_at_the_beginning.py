@@ -24,4 +24,7 @@ head = node1
 
 # create a new node 
 new_node = Node(60)                 # data = 60, new_node.next = None
-new_node.next = 
+new_node.next = head
+
+# recreate a reference making the new node as a new reference
+head = new_node
