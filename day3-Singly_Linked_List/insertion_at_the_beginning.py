@@ -18,3 +18,10 @@ node2.next = node3
 node3.next = node4
 node4.next = node5
 
+
+# create a reference
+head = node1
+
+# create a new node 
+new_node = Node(60)                 # data = 60, new_node.next = None
+new_node.next = 
