@@ -21,3 +21,11 @@ current = head
 while current.next.next is not None:
     current = current.next
 current.next = None
+
+# print the SSL
+current = node1
+
+while current is not None:
+    print(current.data, end="->")
+    current = current.next
+print("None")
