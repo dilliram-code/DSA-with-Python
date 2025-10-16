@@ -18,3 +18,12 @@ node4.next = node5
 
 # create new node
 new_node = Node(100)
+
+# insert the new node at a specific point
+# suppose we want to put after 30
+current = node1
+while current.next is not None and current.data != 30:
+    current = current.next
+
+new_node.next = current.next
+current.next = new_node
