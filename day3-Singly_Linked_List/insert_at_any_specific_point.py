@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self, data=None, next_node=0):
+    def __init__(self, data=None, next_node=None):
         self.data = data
         self.next = next_node
 
@@ -21,8 +21,9 @@ new_node = Node(100)
 
 # insert the new node at a specific point
 # suppose we want to put after 30
+target = 30
 current = node1
-while current.next is not None and current.data != 30:
+while current is not None and current.data != 30:
     current = current.next
 
 new_node.next = current.next
