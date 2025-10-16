@@ -23,8 +23,16 @@ new_node = Node(100)
 
 # traverse to the end of the list
 head = node1
-current = node1
+current = head
 
 while current.next is not None:
     current = current.next
 current.next = new_node
+
+# print the SSL
+
+current = head   # Reset pointer to the first node
+while current is not None:
+    print(current.data, end="->")
+    current = current.next
+print("None")
