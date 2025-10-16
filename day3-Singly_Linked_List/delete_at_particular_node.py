@@ -14,10 +14,16 @@ node1.next = node2
 node2.next = node3
 node3.next = node4
 
-# print the node
-
+# print the original node
 head = node1
 while head is not None:
     print(head.data, end='->')
     head = head.next
 print("None")
+
+# delete a particular node
+head = node1
+current = head
+while current.next.data != 30:
+    current = current.next
+current.next = current.next.next
