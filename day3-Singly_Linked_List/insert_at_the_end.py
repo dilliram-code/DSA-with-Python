@@ -20,3 +20,11 @@ node4.next = node5
 
 # create a node to be added at the end of the list
 new_node = Node(100)
+
+# traverse to the end of the list
+head = node1
+current = node1
+
+while current.next is not None:
+    current = current.next
+current.next = new_node
