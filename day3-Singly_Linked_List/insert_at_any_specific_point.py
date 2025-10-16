@@ -27,3 +27,11 @@ while current.next is not None and current.data != 30:
 
 new_node.next = current.next
 current.next = new_node
+
+# print the SSL:
+head = node1             # reset the reference to the start of SSL
+current = head
+while current.next is not None:
+    print(current.data, end='->')
+    current = current.next
+print("None")
