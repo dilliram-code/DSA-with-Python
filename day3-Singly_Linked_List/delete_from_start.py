@@ -18,4 +18,8 @@ node3.next = node4
 node1 = node1.next          # update the node to the next node
 current = node1             # set the reference to the first node
 
-# 
+# print the SSL
+while current is not None:
+    print(current.data, end="->")
+    current = current.next
+print("None")
