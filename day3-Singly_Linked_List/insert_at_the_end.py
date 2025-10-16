@@ -17,3 +17,6 @@ node1.next = node2
 node2.next = node3
 node3.next = node4
 node4.next = node5
+
+# create a node to be added at the end of the list
+new_node = Node(100)
