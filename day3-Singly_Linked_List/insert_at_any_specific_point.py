@@ -16,3 +16,5 @@ node2.next = node3
 node3.next = node4
 node4.next = node5
 
+# create new node
+new_node = Node(100)
