@@ -27,3 +27,10 @@ current = head
 while current.next.data != 30:
     current = current.next
 current.next = current.next.next
+
+# print the node after deletion
+current = head
+while current is not None:
+    print(current.data, end='->')
+    current = current.next
+print("None")
