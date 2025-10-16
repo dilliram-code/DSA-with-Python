@@ -29,3 +29,6 @@ while current is not None:
     print(current.data, end="->")
     current = current.next
 print("None")
+
+
+# Note: In Python, if there is no ref to the node, then Python treats it as a garbage and hence it cleans the garbage automatically
