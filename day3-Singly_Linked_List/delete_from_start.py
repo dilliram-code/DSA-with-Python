@@ -13,3 +13,9 @@ node4 = Node(40)
 node1.next = node2
 node2.next = node3
 node3.next = node4
+
+# delete the node from the beginning
+node1 = node1.next          # update the node to the next node
+current = node1             # set the reference to the first node
+
+# 
